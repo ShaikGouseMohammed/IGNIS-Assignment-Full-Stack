@@ -8,34 +8,38 @@ Ensure you have the following installed:
     Python 3.x
     Django
     Scrapy
-    Node.js and npm
+    requests
+    beautifulSoup
+    react
+    react-bootsraps
+    djangorestframework
+    
 
 Getting Started
 Step 1: Scrape the Data
 
 To begin, navigate to the backend root folder of the project and execute the following command:
 
-bash
 
-scrapy crawl nobero
+   scrapy crawl nobero
 
 This command will initiate the data scraping process. Upon completion, a product.json file containing the scraped data will be created in the backend root folder.
 Step 2: Start the Backend Server
 
 After scraping the data, you need to start the backend server. Navigate to the backend folder and run:
 
-bash
 
-python manage.py runserver
+
+  python manage.py runserver
 
 This will launch the Django development server, making the backend API available for the frontend to consume.
 Step 3: Start the Frontend
 
 With the backend server running, the next step is to start the frontend. Navigate to the root folder of the frontend (where package.json is located) and run:
 
-bash
 
-npm start
+
+   npm start
 
 This will start the frontend development server, allowing you to view and interact with the scraped data through your web browser.
 Additional Notes
